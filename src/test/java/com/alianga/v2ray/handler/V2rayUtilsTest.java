@@ -1,0 +1,28 @@
+package com.alianga.v2ray.handler;
+
+/*
+ * Created by 郑明亮 on 2021/3/28 16:23.
+ */
+
+//
+
+import com.alianga.v2ray.model.V2rayNode;
+
+import java.util.List;
+
+class V2rayUtilsTest {
+    String subscription = "56We56eY5Luj56CB77yaMTAxMDMKUkVNQVJLUz3lnJ/ni5fkupHnvZHnu5zliqDpgJ8Kdm1lc3M6Ly9leUoySWpveUxDSndjeUk2SXVhenFPV0dqT1djbitlTGwrUzZrUzVqYjIzbGhZM290TG5ubWIzbHE1YnZ2SUh2dklIdnZJRWlMQ0poWkdRaU9pSjRiaTB0T1d0eE5qRnphVGQ0TG1OdmJTSXNJbkJ2Y25RaU9qRXdNRGcyTENKcFpDSTZJbVpqTmpjMU9URXhMV00zWldNdE16WTBOUzA0TWpFMExUZ3laVEV6WldSaE1XUTFZeUlzSW1GcFpDSTZNQ3dpYm1WMElqb2lkR053SWl3aWRIbHdaU0k2SW01dmJtVWlMQ0pvYjNOMElqb2lJaXdpY0dGMGFDSTZJaThpTENKMGJITWlPaUlpZlE9PQp2bWVzczovL2V5SjJJam95TENKd2N5STZJdWVsbnVlbm1PUzdvK2VnZ2UrOG1qRXdNVEF6SWl3aVlXUmtJam9pZUc0dExUbHJjVFl4YzJrM2VDNWpiMjBpTENKd2IzSjBJam94TURBNE5pd2lhV1FpT2lKbVl6WTNOVGt4TVMxak4yVmpMVE0yTkRVdE9ESXhOQzA0TW1VeE0yVmtZVEZrTldNaUxDSmhhV1FpT2pBc0ltNWxkQ0k2SW5SamNDSXNJblI1Y0dVaU9pSnViMjVsSWl3aWFHOXpkQ0k2SWlJc0luQmhkR2dpT2lJdklpd2lkR3h6SWpvaUluMD0Kdm1lc3M6Ly9leUoySWpveUxDSndjeUk2SXVpMHB1YUl0K1czc3VpL2grYWNuKys4ak9pdnQrZTdyZWkwdWVXUWp1Uzl2K2VVcUNJc0ltRmtaQ0k2SW5odUxTMDVhM0UyTVhOcE4zZ3VZMjl0SWl3aWNHOXlkQ0k2TVRBd09EWXNJbWxrSWpvaVptTTJOelU1TVRFdFl6ZGxZeTB6TmpRMUxUZ3lNVFF0T0RKbE1UTmxaR0V4WkRWaklpd2lZV2xrSWpvd0xDSnVaWFFpT2lKMFkzQWlMQ0owZVhCbElqb2libTl1WlNJc0ltaHZjM1FpT2lJaUxDSndZWFJvSWpvaUx5SXNJblJzY3lJNklpSjkKdm1lc3M6Ly9leUoySWpveUxDSndjeUk2SXVpMHB1YUl0K1czc3VpL2grYWNuKys4ak9pdnQrZTdyZWkwdWVXUWp1Uzl2K2VVcUNJc0ltRmtaQ0k2SW5odUxTMDVhM0UyTVhOcE4zZ3VZMjl0SWl3aWNHOXlkQ0k2TVRBd09EWXNJbWxrSWpvaVptTTJOelU1TVRFdFl6ZGxZeTB6TmpRMUxUZ3lNVFF0T0RKbE1UTmxaR0V4WkRWaklpd2lZV2xrSWpvd0xDSnVaWFFpT2lKMFkzQWlMQ0owZVhCbElqb2libTl1WlNJc0ltaHZjM1FpT2lJaUxDSndZWFJvSWpvaUx5SXNJblJzY3lJNklpSjkK";
+
+    public void testParseSubscription() {
+        List<String> list = V2rayUtils.parseSubscription(subscription);
+        list.forEach(System.out::println);
+    }
+
+    public void testParseVmessNode() {
+    }
+
+    public void testGetNodesFromSubscription() {
+        List<V2rayNode> nodesFromSubscription = V2rayUtils.getNodesFromSubscription(subscription);
+        nodesFromSubscription.forEach(System.out::println);
+    }
+}
