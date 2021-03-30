@@ -32,7 +32,7 @@ import lombok.Data;
  * net : ws
  * type : none
  * v : 2
- * ps : 俄罗斯1 Khabarovsk<杭州联通
+ * ps : 俄罗斯1 Khabarovsk 杭州联通
  * id : 0eef4d76-964f-3519-ae77-8725d1b36418
  * class : 1
  */
